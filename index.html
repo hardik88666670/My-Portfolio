@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-3 mx-5">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-blue-600">Chavda Hardik</h1>
+                <div class="space-x-4">
+                    <a href="#home" class="hover:text-blue-600">Home</a>
+                    <a href="#about" class="hover:text-blue-600">About</a>
+                    <a href="#skills" class="hover:text-blue-600">Skills</a>
+                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-8">Frontend Developer</p>
+            <a href="#contact"
+                class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300">Get In
+                Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-600 mb-6">
+                    I am Chavda Hardik web developer focused on creating beautiful and functional websites.
+                    I am studing In 6th SEM B.Tech COMPUTER ENGINEERING in Silver Oak University. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--  skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                
+
+                <!-- Bootstrap -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fab fa-bootstrap text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold">Bootstrap</h3>
+                        <p class="text-gray-600 mt-2">Responsive Design</p>
+                    </div>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="bg-white p-6 rounded-lg shadow-md ">
+                    <div class="text-center">
+                        <svg class="w-12 h-12 mx-auto mb-4" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 6C9.33333 6 7.66667 7.33333 7 10C8 8.66667 9.16667 8.16667 10.5 8.5C11.8333 8.83333 12.8333 9.83333 13.5 11C14.5 12.6667 15.6667 14 18 14C20.6667 14 22.3333 12.6667 23 10C22 11.3333 20.8333 11.8333 19.5 11.5C18.1667 11.1667 17.1667 10.1667 16.5 9C15.5 7.33333 14.3333 6 12 6ZM6 14C3.33333 14 1.66667 15.3333 1 18C2 16.6667 3.16667 16.1667 4.5 16.5C5.83333 16.8333 6.83333 17.8333 7.5 19C8.5 20.6667 9.66667 22 12 22C14.6667 22 16.3333 20.6667 17 18C16 19.3333 14.8333 19.8333 13.5 19.5C12.1667 19.1667 11.1667 18.1667 10.5 17C9.5 15.3333 8.33333 14 6 14Z"
+                                fill="#06B6D4" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+                        <p class="text-gray-600 mt-2">Modern Styling</p>
+                    </div>
+                </div>
+                <!-- JavaScript -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fab fa-js text-4xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                        <p class="text-gray-600 mt-2">Dynamic Functionality</p>
+                    </div>
+                </div>
+                <!-- React.js   -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fab fa-react text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold">React.js</h3>
+                        <p class="text-gray-600 mt-2">Modern UI Development</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" required
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                            rows="4"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
